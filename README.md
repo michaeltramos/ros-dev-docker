@@ -20,4 +20,4 @@ docker run \
     chamberr/ros2-dev-docker:dashing
 ```
 
-This will allow changes made in the <local_project_directory> to be continuously synced with the <container_project_directory>. This sync is bi-directional as long as the container is running. 
+This will allow changes made in the local_project_directory to be continuously synced with the container_project_directory. This sync is bi-directional as long as the container is running.
