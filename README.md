@@ -9,7 +9,7 @@ ROS2 development environment in a Docker container.
 #####  Run the container:
 `docker run -it chamberr/ros2-dev-docker:dashing`
  
-*OR** to start the container with a bind mount to your local project directory...
+**OR** to start the container with a bind mount to your local project directory...
 
 ```
 docker run \
