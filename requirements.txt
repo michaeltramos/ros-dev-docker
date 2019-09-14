@@ -1,0 +1,7 @@
+bpython
+colcon-common-extensions
+flake8
+psutil
+pyserial
+pytest
+ros2-utils
