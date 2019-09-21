@@ -15,8 +15,7 @@ ROS2 development environment in a Docker container.
 docker run \
     -it \
     --mount \
-    type=bind,source \
-    <local_project_directory>,target=/<container_project_directory> \
+    type=bind,source=<local_project_directory>,target=/<container_project_directory> \
     chamberr/ros2-dev-docker:dashing
 ```
 
