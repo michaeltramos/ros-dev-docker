@@ -1,7 +1,2 @@
-bpython
-colcon-common-extensions
-flake8
-psutil
-pyserial
-pytest
-ros2-utils
+colcon-common-extensions==0.2.0
+pytest==4.6.3
