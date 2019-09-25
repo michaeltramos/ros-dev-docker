@@ -41,12 +41,5 @@ COPY ./requirements.txt /requirements.txt
 RUN pip3 install wheel
 RUN pip3 install -r /requirements.txt
 
-# Copy all files in root to the working directory in the container
-COPY . /app
-
-# Build ROS2 packages
-RUN mkdir -p /app/ros2_ws
-WORKDIR /app/ros2_ws/
-
 # Start
 CMD ["bash", "/app/start.sh"]
