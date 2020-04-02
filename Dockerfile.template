@@ -1,0 +1,26 @@
+FROM ros:$ROS-DOCKER-TAG
+
+# Enable udevd
+ENV UDEV=1
+
+# Set non-interractive
+ENV DEBIAN_FRONTEND noninteractive
+
+# Install dependencies (optional)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+	byobu
+
+# install python packages
+COPY ./requirements.txt /requirements.txt
+RUN pip3 install wheel
+RUN pip3 install -r /requirements.txt
+
+# Copy all files in root to the working directory in the container
+COPY . /app
+
+# Build ROS2 packages
+RUN mkdir -p /app/ros2_ws
+WORKDIR /app/ros2_ws/
+
+# Start
+CMD ["bash", "/app/start.sh"]
