@@ -1,4 +1,4 @@
-# ros2-dev-docker
+# ros-dev-docker
 ROS2 development environment in a Docker container.
 
 ## Quick start
